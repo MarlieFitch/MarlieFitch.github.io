@@ -1,48 +1,98 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title> Marlie Fitch - Exercise 7</title>
-        <link href="css/exercise7.css" rel="stylesheet">
-    </head>
 
-<body> 
+body {
+    background-color: #d0d8fff1;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-<header> 
-    <h2 class="logo"><a href="#">MF</a></h2>
-    <nav>Visit my <a href="https://www.linkedin.com/in/marlie-fitch-242b2a250/" target="_blank"><u>LinkedIn</u></a> | <a href="index.html"><u>Back to Exercises</u></a></nav>
+header {
+    background-color: black;
+    color:white;
+    padding: 2rem;
+    text-align: right;
+}
 
-</header>
-
-    <main>
-        <h1>Portfolio</h1>
-
-
-    <div class="wrapper">    
-        <article>
-            <h2>Mock Grant Proposal</h2>
-            <p>A 32-page grant proposal written in Microsoft Word for my Introduction to Professional Writing course, focusing on a local nonprofit organization. A detailed timeline, budget, statement of problem, and more are included in the grant proposal.
-</p>
-            <p><a href="../pdfs/GrantProposalExample.pdf">View the grant proposal here (PDF)</a> </p>
-        </article>
-        <article>
-            <h2>Mock Book Design</h2>
-            <p>A 53-page book I designed and edited using Adobe InDesign. Titled, Inner World, the book consists of nine short stories written during my time as a college undergraduate.</p>
-            <p><a href="../pdfs/BookDesignExample.pdf">View the book here (PDF)</a> </p>
-        </article>
-            <article>
-            <h2>Graphic Novel</h2>
-            <p>A 50-page graphic novel created in my sophomore year of college as an independent project using Clip Studio Paint. Titled, Our Reality, this graphic novel blends my skills of creative writing and art together to explore online relationships in an apocalyptic science-fiction setting. 
-</p>
-            <p><a href="../pdfs/OurRealityExamplecompressed.pdf">View the graphic novel here (PDF)</a> </p>
-        </article>
-    </div>    
+h1 {
+    text-align: center;
+    margin-top: 3.5rem;
+    margin-bottom: 2rem;
+}
 
 
-    </main>
+h2.logo {
+        background-color:#181aac;
+        text-align: center;     
+        width: 6rem;
+        height: 6rem;
+        display: grid;
+        align-items: center;
+        border-radius: 50%;
+}
 
-    <footer>This is my footer area.</footer>
-</body>
+main {
+    border: 0px;
+    border-style: solid;
+    border-color: rgb(255, 0, 0);
+}
+
+a:link {
+    color: #1569c8;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #990c45;
+}
+
+a:hover {
+    color: #f14141;
+}
+
+a:active {
+    color: #e9cece;
+}
 
 
-</html>
+.wrapper {
+    border: 2px black solid; /*shows the edges of our div */
+    margin: 0 auto; /*centers element horizontally */
+    max-width: 40rem; /*in order for the container to appear center, it needs a width */
+}
+
+article {
+    background-color: white;
+    border: 1px solid #2a0162e9;
+    padding: 1.3rem;
+    margin: .5rem;
+    margin-bottom: 1.5rem;
+    border-radius: 1.5rem;
+
+}
+
+
+header a:link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: #4ec7ff;
+    text-decoration: underline;
+}
+
+header a:active {
+    color: #f14141;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
