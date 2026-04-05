@@ -1,0 +1,297 @@
+
+ 
+ 
+ #maincontent {
+   font-size: 16px;
+  
+    display: grid;
+   /* grid-template-rows: 8rem 1fr 1fr;*/
+   /* grid-template-rows: minmax(0 8rem) minmax(0 1fr) minmax(0 1fr); */
+   grid-template-rows: auto; /*minmax(0 8rem) minmax(0 30rem) minmax(0 30rem); is what I originally had here but the validator said it was an incorrect operator, but auto has the same results */
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    max-width: 1000px;
+    margin: 0 auto;
+    min-height: 100vh;
+    white-space-collapse: collapse;
+    column-gap: 3px;
+    row-gap: 3px;
+  }
+
+
+
+header {
+    background-color: rgb(53, 54, 55);
+    border: 2px solid black;
+    color: white;
+    padding: 1rem;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+
+#Rightboxmid { /*THIS IS ACTUALLY THE LEFT MIDDLE BOX i tried changing the name but it messed everything up lol */
+    background-color: rgb(196, 177, 190);
+        border: 2px solid black;
+    padding: 1rem;
+    display: grid;
+    text-align: center;
+    align-items: center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+ 
+}
+
+#Leftboxmid { /*THIS IS ACTUALLY THE RIGHT MIDDLE BOX*/
+    background-color: rgb(115, 108, 121);
+        border: 2px solid black;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 4;
+    grid-column-end: 7;
+}
+
+.img1 {
+  
+ display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+#rightbottom { /*THIS IS ACTUALLY THE LEFT BOTTOM BOX*/
+      border: 2px solid black;
+  align-items: center;
+  overflow-wrap: break-word;
+  /*overflow: scroll;*/
+    background-color:rgb(207, 223, 236);
+    padding: 6px;
+     grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#middlebottom {
+
+      background-color: rgb(103, 93, 103);
+          border: 2px solid black;
+      max-width: 100%;
+      max-height: 100%;
+     grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.img2 {
+ display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#leftbottom { /*THIS IS ACTUALLY THE RIGHT BOTTOM BOX*/
+      border: 2px solid black;
+    background-color: rgb(207, 223, 236);
+    overflow-wrap:break-word;
+    align-items: center;
+   /* overflow: scroll;*/
+    padding: 6px;
+     grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 5;
+    grid-column-end: 7;
+
+}
+    .img3 {
+      display: block;
+      float: right;
+      max-width: 50%;
+      min-width: 50%;
+      padding: 6px;
+      margin: 6px;
+
+    }
+
+
+
+
+
+
+@media (max-width: 700px) { /*whats in the ( ) is what the website looks for in a device and changes according to if it meets the requirements in the () or not */
+  #maincontent {
+    display:block; /*this means when the screen size is less than 700px, then the grid is turned off and the website displays things on top of each other */
+    border: 0;
+    font-size: 1rem;
+    min-width: 100px;
+ 
+  }
+
+  header {
+    margin: 8px;
+  }
+
+#Rightboxmid {
+  margin: 8px;
+}
+
+#Leftboxmid {
+  margin: 8px;
+}
+
+#leftbottom {
+  margin: 8px;
+}
+
+#rightbottom {
+  margin: 8px;
+}
+
+#middlebottom {
+  margin: 8px;
+}
+
+
+
+
+
+
+
+}
+
+  
+
+
+
+
+/*@media (max-width:500px) {
+    #maincontent {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+      min-height: 100vh;
+    }
+}
+
+/*
+.img3 {
+  display: grid;
+   overflow:scroll;
+   float: right;
+  max-width: 250px;
+  max-height: 190px;
+  padding: 2rem;
+
+
+}
+
+
+
+/*
+.img3 {
+  display:grid;
+  float: right;
+  margin: 1rem;
+  width: 100%;
+  height: auto;
+}
+
+
+
+/*
+@media (max-width: 1000px) {
+  layout {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+
+ 
+/* #maincontent {
+  border: 3px solid black;
+  background-color: aqua;
+    display: grid;
+    grid-template-rows: 6rem 3fr 3fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   
+  
+   /* grid-template-rows: 2fr 3fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
+
+
+   /* grid-template-rows: 8rem 3fr 2fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr; */
+  
+
+  /*
+header {
+    border: 2px dotted gray;
+    background-color: beige;
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 5;
+}
+
+
+#Rightboxmid {
+      border: 2px dotted gray;
+    background-color: rgb(244, 72, 187);
+    text-align: center;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+ 
+}
+
+#Leftboxmid {
+      border: 2px dotted gray;
+    background-color: blueviolet;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+#rightbottom {
+      border: 2px dotted gray;
+    background-color: aliceblue;
+     grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+#middlebottom {
+      border: 2px dotted gray;
+      background-color: darkmagenta;
+     grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+#leftbottom {
+      border: 2px dotted gray;
+    background-color: chocolate;
+     grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+
+
+#img3 {
+  float: left;
+}
