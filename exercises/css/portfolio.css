@@ -95,13 +95,18 @@ hr {
 /*STUFF IN THIS SECTION IS THE BODY CONTENT OF THE ABOUT ME/LANDING PAGE */
 
 
+.Aboutmecontainer {
+    display: flex;
+    gap: 30px;
+}
+
 #LandingPagePicture {
     display: grid;
     grid-template-columns: .5fr;
     grid-template-rows: .3fr;
      width: fit-content;
      height: 100;
-     background-color: aqua;
+     margin: 7rem;
      
 }
 
@@ -110,10 +115,9 @@ hr {
     grid-row: 1/2;
     grid-column: 1/2;
      height: auto;
-    margin-top: 3rem;
-    border: 4px red solid;
-   
+    margin-top: 9rem;
     object-fit: cover;
+
 
 }
 
@@ -125,14 +129,13 @@ hr {
     gap: 20px;
      justify-self: end;
      width:auto;
-    height: fit-content;
    max-width: 50rem;
     min-height: 100%;
     margin-top: 3rem;
     margin-bottom: 3rem;
     margin-right: .2rem;
     padding: 15px;
-    border: red 3px solid;
+
     
 }
 
@@ -162,6 +165,7 @@ hr {
      font-size: 20px;
     align-items: center;
     align-content: center;
+
 }
 
 
