@@ -7,7 +7,7 @@ Body {
  /* background-color: rgb(236, 243, 252); */
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     /*make this auto for other version but still glitchy*/
-    margin: 0;
+    margin: 0px;
     min-height:100vh;
 }
 
@@ -17,9 +17,9 @@ Body {
 header {
     display: grid;
     grid-template-columns: 16fr 14fr;
-    grid-template-rows: minmax(auto, 1fr);
-    background-color:rgba(246, 245, 245, 0.515);
-    max-width: 100%;
+    grid-template-rows:  1fr;
+    background-color:rgba(32, 31, 31, 0.596);
+    max-width: 100vw;
      justify-content: center;
   /*  border: red 3px dotted;*/
 }
@@ -43,10 +43,11 @@ hr {
     font-weight: 400px;
     font-style: normal;
     font-size: 35px;
-    letter-spacing: 34px;
+    letter-spacing: 25px;
     text-align: left;
     padding: 1rem;
     padding-left: 3rem;
+    color: rgb(255, 250, 253);
 }
 
 
@@ -56,6 +57,7 @@ hr {
         grid-column: 2/3;
         padding-top: .9rem;
         font-size: 1.5rem;
+        margin-top: 1.8rem;
     }
 
 
@@ -65,14 +67,14 @@ hr {
         display: grid;
         grid-row: 1/2;
         grid-column: 2/3; 
-        padding: 4px;
+        padding: 6px;
     }
 
     nav a {
-        color: rgb(197, 2, 126);
+        color: rgb(236, 227, 233);
         text-decoration: none; 
         text-align: center;
-        padding: 4px;
+        padding: 6px;
     }
 
     nav ul {
@@ -87,8 +89,69 @@ hr {
     nav a:hover {
         background: rgb(59, 50, 69);
         color:rgb(152, 238, 172); 
-       padding: 4px; /*FOR SOME REASON THIS MAKES IT LIKE SHAKE/MOVE BUT IDK IF I LIKE IT*/
+       padding: 6px; /*FOR SOME REASON THIS MAKES IT LIKE SHAKE/MOVE BUT IDK IF I LIKE IT*/
+       border-radius: 20%;
 }
+
+
+
+
+
+/*NAV HOVER BUTTON EFFECTS BELOW*/
+
+
+
+.aboutbutton {
+    transition: transform 0.2s, border-radius 0.2s;
+   
+}
+
+
+.aboutbutton:hover {
+    transform: scale(1.1);
+    border-radius: 20%;
+    background: rgb(59, 50, 69);
+}
+
+
+
+.portfoliobutton {
+    transition: transform 0.2s, border-radius 0.2s;
+  
+}
+
+
+.portfoliobutton:hover {
+
+    transform: scale(1.1);
+    border-radius: 20%;
+    background: rgb(59, 50, 69);
+}
+
+.resumebutton {
+    transition: transform 0.2s, border-radius 0.2s;
+   
+}
+
+.resumebutton:hover {
+    transform: scale(1.1);
+    border-radius: 20%;
+    background: rgb(59, 50, 69);
+}
+
+.contactbutton {
+    transition: transform 0.2s, border-radius 0.2s;
+   
+}
+
+.contactbutton:hover {
+    transform: scale(1.1);
+    border-radius: 20%;
+    background: rgb(59, 50, 69);
+}
+
+
+
 
 
 
@@ -105,19 +168,90 @@ hr {
     grid-template-columns: .5fr;
     grid-template-rows: .3fr;
      width: fit-content;
-     height: 100;
      margin: 7rem;
      
 }
 
 #AboutMeImageImage {
-    display: grid;
     grid-row: 1/2;
     grid-column: 1/2;
      height: auto;
-    margin-top: 9rem;
+    margin-top: 12rem;
     object-fit: cover;
+ border: black .3px solid;
 
+}
+
+
+#LandingPageBody {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: .3fr .3fr;
+   gap: 20px;
+     width:auto;
+    min-height: 100%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    margin-right: .2rem;
+    padding: 15px;
+   /* overflow: hidden;*/
+    
+}
+
+
+
+#LandingPageAboutMeText {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+   font-size: 2.5rem;
+    letter-spacing: 20px;
+    place-items: center;
+    align-items: center;
+    align-content: center;
+     white-space: nowrap;
+      padding: .6rem;
+      border-bottom: .3px black solid;
+      
+}
+
+#LandingPageBodyText {
+    grid-row: 2/2;
+    grid-column: 1/2;
+    padding: 1.2rem;
+     font-size: 1.2rem;
+    align-items: center;
+    align-content: center;
+
+}
+
+
+
+/*
+.Aboutmecontainer {
+    display: flex;
+    gap: 30px;
+}
+
+#LandingPagePicture {
+    display: grid;
+    grid-template-columns: .5fr;
+    grid-template-rows: .3fr;
+     width: fit-content;
+     height: 100%;
+     margin: 7rem;
+     
+}
+
+#AboutMeImageImage {
+    grid-row: 1/2;
+    grid-column: 1/2;
+     height: auto;
+    margin-top: 12rem;
+    object-fit: cover;
+ border: black .3px solid;
 
 }
 
@@ -129,12 +263,14 @@ hr {
     gap: 20px;
      justify-self: end;
      width:auto;
-   max-width: 50rem;
+   max-width: 55rem;
     min-height: 100%;
-    margin-top: 3rem;
+    margin-top: 1rem;
     margin-bottom: 3rem;
     margin-right: .2rem;
     padding: 15px;
+    overflow: hidden;
+
 
     
 }
@@ -148,7 +284,7 @@ hr {
     font-weight: 400px;
     font-style: normal;
     font-size: 40px;
-    letter-spacing: 50px;
+    letter-spacing: 20px;
      text-align: center;
     align-items: center;
     align-content: center;
@@ -166,26 +302,14 @@ hr {
     align-items: center;
     align-content: center;
 
-}
+}*/
 
 
-/*#LandingPagePicture {
-    display: grid;
-    grid-template-columns: .3fr;
-    grid-template-rows: .3fr;
-    background-color: red;
-    border: 3px black solid;
-      justify-self: start;
-     width:fit-content;
-    height: fit-content;
-  
-    min-height: 100;
-}
-*/
+
 #AboutMeImageImage {
    
       width: 300px;
-      margin-top: 30x;
+      margin-top: 12rem;
 }
 
 
@@ -217,7 +341,7 @@ hr {
     font-weight: 400px;
     font-style: normal;
     font-size: 40px;
-    letter-spacing: 50px;
+    letter-spacing: 20px;
     text-align: center;
     align-items: center;
     align-content: center;
@@ -279,45 +403,162 @@ hr {
 /*STUFF IN THIS SECTION IS THE PORTFOLIO LANDING PAGE */
 
 
-#PortfolioLandingPageText {
+.PortfolioLandingPageText {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-row-gap: 18px;
-    
+    grid-template-columns: 30rem 30rem;
+    grid-template-rows: 20rem; 
+    gap: 50px;
+    max-width: 1000px;
+    margin: auto;
+   margin-top: 90px;
+    white-space-collapse: collapse;
+
 }
 
 
 #GraphicDesignText {
-    display: grid;
-    grid-row: 1/1;
-    grid-column: 2/2;
-    padding: 5rem;
-    margin: 3rem;
+    
+    grid-row: 1/2;
+    grid-column: 1/2;
+   padding: 5rem;
     margin-top: 3rem;
     text-align: center;
    width: 16rem;
    place-self: center;
     border: .3px rgb(0, 0, 0) solid;
-     background-color: rgba(239, 219, 254, 0.4);
-  
+    
+     background-image: url(../css/graphicportfoliobw.jpg);
+  background-size: 100%;
+     background-repeat: none;
+     background-position: center;
+      transition: transform 0.2s;
+}
+
+#GraphicDesignactualtext {
+     background-color: rgba(255, 255, 255, 0.884);
+    border: .3px solid black;
+  place-items: center;
+  place-content: center;
+    padding: 0;
+    margin: 0;
+ 
+
 }
 
 
+#GraphicDesignactualtext:hover {
+       background: rgb(59, 50, 69);
+     transition: transform .2s;
+      transform: scale(1.07);
+
+}
+
+
+
+#GraphicDesignactualtext a:hover {
+        color:rgb(152, 238, 172); 
+}
+
+
+#GraphicDesignactualtext a:visited {
+    color: none;
+}
+
+#GraphicDesignText:hover {
+ transform: scale(1.1);
+   background-image: url(../css/graphicportfoliocolor.jpg);
+   
+}
+
+
+
+
+
+
+
 #CharacterDesignText {
-     display: grid;
+    
      grid-row: 2/1;
-     grid-column: 3/2;
+     grid-column: 2/3;
+     width: fit-content;
     padding: 5rem;
-    margin: 3rem;
       margin-top: 3rem;
       text-align: center;
     width: 16rem;
   place-self: center;
-   border: .3px rgb(0, 0, 0) solid;
-     background-color: rgba(239, 219, 254, 0.4);
+   border:.3px rgb(0, 0, 0) solid;
+    
+     background-image: url(../css/characterportbw.jpg);
+     background-size: 100%;
+     background-repeat: none;
+     background-position: center;
+      transition: transform 0.2s;
   
 }
+
+
+
+#CharacterDesignactualtext {
+    background-color: rgba(255, 255, 255, 0.884);
+    border: .3px solid black;
+  place-items: center;
+  place-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+#CharacterDesignactualtext:hover {
+     background: rgb(59, 50, 69);
+     transition: transform .2s;
+      transform: scale(1.07);
+
+}
+
+#CharacterDesignactualtext a:hover {
+    color:rgb(152, 238, 172); 
+
+}
+
+#CharacterDesignactualtext a:visited {
+    color: none;
+}
+
+
+
+#CharacterDesignText:hover {
+    transform: scale(1.1);
+    background-image: url(../css/characterportcolor.jpg);
+}
+
+
+
+
+
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: none;
+}
+
+a:visited {
+    color:none;
+}
+
+a:active {
+    color:rgb(221, 235, 250); 
+}
+
+
+
+
+
+
+
+
 
 
 /*STUFF IN THIS SECTION IS FOR THE FLYERES AND ADS */
@@ -332,9 +573,11 @@ hr {
     font-weight: 400px;
     font-style: normal;
     font-size: 25px;
-    letter-spacing: 50px;
+    letter-spacing: 20px;
     margin-top: 3rem;
     padding: 15px;
+     background-color: rgba(7, 7, 7, 0.812);
+     color:white;
 }
 
 #FlyersandAdsExamples {
@@ -344,23 +587,17 @@ display: grid;
      grid-template-rows: .3fr .3fr;
     gap: 6px;
     margin: 3rem;
-    justify-items: center;
-  align-items: center;
-  place-items: center;
    max-width: 90rem;
     min-height: 100%;
     margin: auto;
     margin-top: 3rem;
     margin-bottom: 3rem;
     gap: 3px;
-        
-
 }
 
 #GraphicExampleOne {
 grid-row: 1/2;
 grid-column: 1/2;
-    border: red solid 3px;
      align-items: center;
          text-align: center;
     align-content: center;
@@ -374,7 +611,6 @@ grid-column: 1/2;
 #GraphicExampleTwo {
 grid-row: 1/1;
 grid-column: 2/3;
-    border: red solid 3px;
      align-items: center;
          text-align: center;
     align-content: center;
@@ -388,7 +624,6 @@ grid-column: 2/3;
 #GraphicExampleThree {
     grid-row: 2/3;
     grid-column: 1/2;
-    border: red solid 3px;
      align-items: center;
          text-align: center;
     align-content: center;
@@ -402,7 +637,6 @@ grid-column: 2/3;
 #GraphicExampleFour {
     grid-row: 2/2;
     grid-column: 2/3;
-    border: red solid 3px;
      align-items: center;
          text-align: center;
     align-content: center;
@@ -416,8 +650,8 @@ grid-column: 2/3;
 
 /*STUFF IN THIS SECTION IS FOR BOOK DESIGN AND INTERIOR */
     #BookCoversandInteriorsText {
-       align-items: center;
-         text-align: center;
+    align-items: center;
+    text-align: center;
     align-content: center;
     place-items: center;
      background-color:rgba(246, 245, 245, 0.515);
@@ -425,16 +659,15 @@ grid-column: 2/3;
     font-weight: 400px;
     font-style: normal;
     font-size: 25px;
-    letter-spacing: 50px;
+    letter-spacing: 20px;
     margin-top: 3rem;
     padding: 15px;
-    width: 100%;
-  height: 100%;
-  object-fit: cover;
+    background-color: rgba(7, 7, 7, 0.812);
+     color:white;
+    object-fit: cover;
     }
 
     #BookCoversandInteriorsExamples {
-    
         display: grid;
         grid-template-columns: .5fr;
         grid-template-rows: .3fr .3fr;
@@ -445,6 +678,7 @@ grid-column: 2/3;
         place-self: center;
    max-width: 90rem;
     min-height: 100%;
+    margin-top: 3rem;
     
     
   
@@ -455,7 +689,6 @@ grid-column: 2/3;
     #BookExampleOne {  
         grid-row: 1/2;
         grid-column: 1/2;
-        border: blue solid 3px;
         align-items: center;
          text-align: center;
      align-content: center;
@@ -468,15 +701,38 @@ grid-column: 2/3;
     #BookExampleTwo {
       grid-row: 2/3;
       grid-column: 1/2;
-        border: red solid 3px;
         align-items: center;
          text-align: center;
         align-content: center;
          place-items: center;
+         margin-top: 3rem;
 
     }
 
 
+    figcaption {
+        margin-top: .8rem;
+    }
+
+/*STUFF IN HERE FOR THE CONCEPT ART */
+
+/*#conceptarth2 {
+    align-items: center;
+         text-align: center;
+    align-content: center;
+    place-items: center;
+     background-color:rgba(246, 245, 245, 0.515);
+      font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: 50px;
+    margin-top: 3rem;
+    padding: 15px;
+     background-color: rgba(7, 7, 7, 0.812);
+     color:white;
+}
+*/
 
 
 
@@ -484,18 +740,13 @@ grid-column: 2/3;
 
 
 
+/*STUFF IN HERE FOR THE RENDERS */
 
-
-
-
-
-/*STUFF IN THIS SECTION FOR THE FANART */
- .FanartImages {
-  display: grid;
+.characterrendercontainer {   /*these are long so maybe add like a horizontal scroll bar/arrow?? if i have time lol */
+    display: grid;
   grid-template-columns: .5fr .5fr .5fr;
   grid-template-rows: .3fr .3fr;
-  border: 3px blue solid;
- 
+
   justify-items: center;
   align-items: center;
   place-items: center;
@@ -504,7 +755,137 @@ grid-column: 2/3;
     margin: auto;
     margin-top: 3rem;
     margin-bottom: 3rem;
-    gap: 3px;
+    gap: 8px;
+}
+
+
+
+#characterdesignh2 {
+    align-items: center;
+         text-align: center;
+    align-content: center;
+    place-items: center;
+     background-color:rgba(246, 245, 245, 0.515);
+      font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: 20px;
+    margin-top: 3rem;
+    padding: 15px;
+     background-color: rgba(7, 7, 7, 0.812);
+     color:white;
+}
+
+
+
+
+
+
+
+#render1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: rgba(37, 37, 37, 0.479);
+    border: .3px black solid;
+}
+
+#render2 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: rgba(37, 37, 37, 0.479);
+    border: .3px black solid;
+}
+
+#render3 {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+      background-color: rgba(37, 37, 37, 0.479);
+    border: .3px black solid;
+}
+
+#render4 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+      background-color: rgba(37, 37, 37, 0.479);
+    border: .3px black solid;
+}
+
+#render5 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+      background-color: rgba(37, 37, 37, 0.479);
+    border: .3px black solid;
+}
+
+#render6 {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+      background-color: rgba(37, 37, 37, 0.479);
+    border: .3px black solid;
+}
+
+
+
+
+
+/*STUFF IN THIS SECTION FOR THE FANART */
+
+#fanh2 {
+    align-items: center;
+         text-align: center;
+    align-content: center;
+    place-items: center;
+     background-color:rgba(246, 245, 245, 0.515);
+      font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: 20px;
+    margin-top: 3rem;
+    padding: 15px;
+     background-color: rgba(7, 7, 7, 0.812);
+     color:white;
+}
+
+
+
+
+
+
+
+
+ .FanartImages {
+  display: grid;
+  grid-template-columns: .5fr .5fr .5fr;
+  grid-template-rows: .3fr .3fr;
+  justify-items: center;
+  align-items: center;
+  place-items: center;
+    max-width: 90rem;
+    min-height: 100%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    gap: 8px;
 }
 
 
@@ -514,6 +895,7 @@ grid-column: 2/3;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border: .3px black solid;
 }
 
 #image2 {
@@ -522,7 +904,7 @@ grid-column: 2/3;
     width: 100%;
     height: 100%;
     object-fit: cover;
-    background-color: blue;
+    border: .3px black solid;
 }
 
 #image3 {
@@ -531,6 +913,7 @@ grid-column: 2/3;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border: .3px black solid;
 }
 
 #image4 {
@@ -539,6 +922,7 @@ grid-column: 2/3;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border: .3px black solid;
 }
 
 #image5 {
@@ -547,6 +931,7 @@ grid-column: 2/3;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border: .3px black solid;
 }
 
 #image6 {
@@ -555,6 +940,7 @@ grid-column: 2/3;
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border: .3px black solid;
 }
 
 
@@ -563,6 +949,153 @@ grid-column: 2/3;
     align-items: center;
     gap: 8px;*/
  
+/*STUFF IN TS SECTION IS CONTACT PAGE */
+
+.Contacth2container {
+    display: grid;
+    grid-template-columns: .3fr .5fr;
+    grid-template-rows: .2fr;
+    column-gap: 30px;
+     max-width: 1000px;
+    margin: 0 auto;
+      max-width: 1000px;
+    min-height: 100%;
+
+
+}
+
+
+#Contactimg {
+  background-color: aqua;
+  grid-row: 1/2;
+  grid-column: 1/2;
+    align-self: center;
+    border: .3px solid black;
+  object-fit: contain;
+  margin: 3rem;
+    margin-top: 8rem;
+    width: 300px;
+}
+
+
+#contactbody {
+    margin-top: 6rem;
+    margin-left: 4rem;
+}
+
+
+#Contacth2 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+     font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 40px;
+    letter-spacing: 20px;
+     text-align: center;
+    align-items: center;
+    align-content: center;
+     white-space: nowrap;
+      padding: .6rem;
+      padding-left: 2rem;
+      border-bottom: .3px black solid;
+ 
+}
+
+#Contactbodytext {
+    grid-row: 1/2;
+    grid-column: 2/3;
+     padding: 1.2rem;
+     padding-top: 0;
+     font-size: 20px;
+    align-items: center;
+    align-content: center;
+   
+  
+}
+
+
+footer {
+      background-color:rgba(32, 31, 31, 0.596);
+      color: rgb(206, 203, 203);
+      border: .3px black solid;
+      place-items: center;
+      text-align: center;
+      margin-top: 3rem;
+      padding: 1.5rem;
+}
+
+
+/*
+
+.Contacth2container {
+    display: grid;
+    grid-template-columns: .3fr .5fr .3fr;
+    grid-template-rows: .2fr .2fr;
+    column-gap: 30px;
+}
+
+#Contacth2 {
+    grid-row: 1/2;
+    grid-column: 3/4;
+     font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 40px;
+    letter-spacing: 20px;
+     text-align: center;
+    align-items: center;
+    align-content: center;
+     white-space: nowrap;
+      padding: .6rem;
+      border-bottom: .3px black solid;
+      margin-right: 3rem;
+      height: fit-content;
+      margin-top: 3rem;
+      
+}
+
+#Contactbodytext {
+    grid-row: 2/3;
+    grid-column: 3/4;
+     padding: 1.2rem;
+     padding-top: 0;
+     font-size: 20px;
+    align-items: center;
+    align-content: center;
+    margin-right: 7rem;
+    margin-top: 3rem;
+  
+}
+
+
+#Contactimg {
+   
+  grid-area: 1 / 1 / 3 / 3;
+    align-self: center;
+    border: .3px solid black;
+  object-fit: contain;
+  margin: 3rem;
+    margin-top: 8rem;
+    width: 300px;
+    
+    
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*STUFF IN THIS SECTION IS THE BODY CONTENT OF THE ABOUT ME/LANDING PAGE 
