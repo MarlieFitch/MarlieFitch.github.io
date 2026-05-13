@@ -2,12 +2,20 @@
 <html lang="zxx">
         <head>
             <meta charset="UTF-8">
-            <Title>About Me</Title>
+            <Title>Marlie Fitch | Graphic Design</Title>
+
             <link href="../exercises/css/portfolio.css" rel="stylesheet">
             
                  <link rel="preconnect" href="https://fonts.googleapis.com">
                  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
                  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&display=swap" rel="stylesheet">
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+
         
         </head>
 
@@ -20,29 +28,39 @@
 
 
 
-                        <div id="navbar">
+                       <div id="navbar">
                                 <nav>
                                         <ul>
-                                                <div class="aboutbutton">
-                                                        <li><a href="Aboutme.html">About Me</a></li>
-                                                </div> 
+                                                <li class="button"><a href="Aboutme.html">About Me</a></li>
+                                               
 
-                                                <div class="portfoliobutton">
-                                                        <li><a href="portfolio.html">Portfolio</a></li>
-                                                </div>
+                                                        
+                                                                <li class="portfoliodropdown"><a href="#">Portfolio</a>
+                                                                       
+                                                                                <ul class="dropdownulcontent">
+                                                                                        <li><a href="graphicdesignportfolio.html">Graphic Design</a></li>
+                                                                                        <li><a href="characterdesign.html">Character Design & Illustrations</a></li>
+                                                                                </ul>  
+                                                                         
+                                                                </li>   
+                                        
+                                                       
+                                                      
+                                              
 
-                                                <div class="resumebutton">
-                                                        <li><a href="../pdfs/ResumeApril2026MarlieFitch.pdf" target="_blank">Resume (PDF)</a></li>
-                                                </div>
+                                               
+                                                        <li class="button"><a href="resume.html">Resume</a></li>
+                                               
 
-                                                <div class="contactbutton">
-                                                        <li><a href="contact.html">Contact</a></li>
-                                                </div>
+                                          
+                                                        <li class="button"><a href="contact.html">Contact</a></li>
+                                             
                                                
                                                 
                                         </ul>
                                 </nav>
                         </div>
+
 
                 </header>
 
@@ -50,20 +68,86 @@
 
    <main>
 
+                
 
                     <div id="FlyersandAdsText">
 
                                 <h2>Flyers & Ads</h2>
 
                     </div>
-                                        <div id="FlyersandAdsExamples">
+
+                      <div class="FlyersandAdsExamples">
                                                 
-                                                <div id="GraphicExampleOne">
+                                             
+                                        <figure>           
+                                                <img src="../images/graphicdesign/GraphicExampleOne.png" id="GraphicExampleOne" alt="DO THESE LATER">
+                                        <figcaption>Created for the UMass English Department</figcaption> 
+                                        </figure>               
+                                                  
+                                        <figure>          
+                                                <img src="../images/graphicdesign/GraphicExampleTwo.png" id="GraphicExampleTwo">
+                                        <figcaption>test</figcaption> 
+                                        </figure>             
+                
+                                        <figure>      
+                                        <img src="../images/graphicdesign/GraphicExampleThree.png" id="GraphicExampleThree">
+                                         <figcaption>test</figcaption> 
+                                        </figure> 
+
+                                        <figure>
+                                        <img src="../images/graphicdesign/GraphicExampleFour.png" id="GraphicExampleFour">
+                                         <figcaption>test</figcaption> 
+                                        </figure>                   
+                                                  
+                        </div>
+
+
+
+
+                          <div id="BookCoversandInteriorsText">
+
+                                        <h2>Book Covers & Interiors</h2>
+
+                        </div>
+
+                                                <div id="BookCoversandInteriorsExamples">
+                                                        
+                                                                        <figure>
+                                                                                <img src="../images/graphicdesign/BookExampleAltOne.png" id="BookExampleOne">
+                                                                        <figcaption><a href="../pdfs/BookDesignExample.pdf"><i>Inner World</i> | Short Story Collection (PDF)</a></figcaption>
+                                                                        </figure>
+                                                      
+
+
+
+                                                                        <figure>
+                                                                                <img src="../images/graphicdesign/BookExampleTwo.png" id="BookExampleTwo">
+                                                                        <figcaption><a href="../pdfs/OurRealityExamplecompressed.pdf"><i>Our Reality</i> | Graphic Novel (PDF)</a></figcaption>
+                                                                        </figure>
+                                                    
+                                                              
+                                                </div>
+
+
+
+
+
+
+
+
+
+
+
+                <!--Bad code that doesnt let anythink scale to the website size (I think cause I was overcomplicating with divs)
+
+                                        <div class="FlyersandAdsExamples">
+                                                
+                                             
                                                         <figure>
                                                                 <img src="../images/graphicdesign/GraphicExampleOne.png" alt="DO THESE LATER">
                                                                 <figcaption>test</figcaption>
                                                         </figure>
-                                                </div>
+                                               
 
                                                 <div id="GraphicExampleTwo">
                                                         <figure>
@@ -92,9 +176,7 @@
 
                                         </div>
 
-
-
-                        <div id="BookCoversandInteriorsText">
+  <div id="BookCoversandInteriorsText">
 
                                         <h2>Book Covers & Interiors</h2>
 
@@ -115,8 +197,18 @@
                                                               
                                                 </div>
 
+
+
+
+
+
+
+                                -->
+
+                      
+
     
 
    </main>
 
-   <footer> something something copyright</footer>
+   <footer>All work on this page is copyright to Marlie Fitch.</footer>
