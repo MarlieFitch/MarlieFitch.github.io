@@ -1,10 +1,7 @@
 
 Body {
   background-color:rgb(238, 247, 255);
- 
- /* background-color: rgb(236, 243, 252); */
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    /*make this auto for other version but still glitchy*/
     margin: 0;
     min-height:100vh;
      display: flex;
@@ -12,7 +9,7 @@ Body {
 }
 
 main {
-    flex-grow: 1;
+    flex-grow: 1; /*ts makes the footer scale with the page */
 }
 
 
@@ -26,7 +23,7 @@ header {
     max-width: 100vw;
      justify-content: center;
      margin: 0;
-  /*  border: red 3px dotted;*/
+ 
 }
 
 
@@ -36,27 +33,9 @@ header {
    display: flex;
         flex-wrap:wrap;
     font-family: "Alumni Sans Pinstripe", sans-serif;
-   
     font-style: normal;
     font-size: 2.3rem;
     letter-spacing: 15px;
-     /*font-family: "Faculty Glyphic", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 1.7rem;
-  letter-spacing: 8px;*/
-/*  
-font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-  font-size: 2.3rem;
-  letter-spacing: 8px;*/
-
-
-
-
-
     padding: 1rem;
      padding-left: 2rem;
     color:rgb(15, 12, 22);
@@ -132,90 +111,6 @@ hr {
 
 }
 
-/*NAV HOVER BUTTON EFFECTS BELOW*/
-
-
-/*
-.aboutbutton {
-     transition: transform 0.2s, border-radius 0.2s;
-  border: .3px black solid;
-     background-color: rgba(40, 23, 114, 0.699);
-    border-radius: 10%;
-   
-}
-
-
-.aboutbutton:hover {
-    transform: scale(1.1);
-    border-radius: 20%;
-     border: .3px black solid;
-    background: rgb(59, 50, 69);
-}
-
-
-
-.portfoliobutton {
-    transition: transform 0.2s, border-radius 0.2s;
-    background-color: rgba(40, 23, 114, 0.699);
-   border: .3px black solid;
-    border-radius: 10%;
-    
-}
-
-
-.portfoliobutton:hover {
-
-    transform: scale(1.1);
-    border-radius: 20%;
-    background: rgb(59, 50, 69);
-}
-
-.resumebutton {
-    transition: transform 0.2s, border-radius 0.2s;
-    background-color: rgba(40, 23, 114, 0.699);
-    border-radius: 10%;
-     border: .3px black solid;
-}
-
-.resumebutton:hover {
-    transform: scale(1.1);
-    border-radius: 20%;
-    background: rgb(59, 50, 69);
-}
-
-.contactbutton {
-    transition: transform 0.2s, border-radius 0.2s;
-   background-color: rgba(40, 23, 114, 0.699);
-    border-radius: 10%;
-     border: .3px black solid;
-}
-
-.contactbutton:hover {
-    transform: scale(1.1);
-    border-radius: 20%;
-    background: rgb(59, 50, 69);
-}
-
-
-.portfoliobutton {
-    position: relative;
-}
-
-.Portfoliodropdown {
-    display: none;
-  position: absolute;
- background: rgb(59, 50, 69);
-  min-width: 1rem;
- padding: .8rem;
- 
-  
-}
-
-.portfoliobutton:hover .Portfoliodropdown {
-    display: block;
-    
-}
-*/
 
 
 .button {
@@ -281,40 +176,6 @@ hr {
 
 
 
-/*
-@media (max-width: 600px) { /*whats in the ( ) is what the website looks for in a device and changes according to if it meets the requirements in the () or not */
- /* #header {
-   display: grid;
-   grid-template-columns: 2fr;
-    grid-template-rows:  1fr 1fr;
-    background-color:rgba(12, 12, 51, 0.596);
-    max-width: 100vw;
-     justify-content: center;
-     margin: 0;
- 
-  }
-
-  #MarlieTitle {
-    grid-row: 1/2;
-    grid-column: 1/3;
-    font-size:1.2rem;
-  }
-
-  #navbar {
-    grid-row: 2/3;
-    grid-column: 1/3;
-    display: flex;
-    flex-direction: row;
-    font-size: .9rem;
-  }*/
-
-
-
-
-/*
-}*/
-
-
 
 /*STUFF IN THIS SECTION IS THE BODY CONTENT OF THE ABOUT ME/LANDING PAGE */
 
@@ -329,14 +190,7 @@ hr {
     margin-top: 4rem;
 }
 
-/*#LandingPagePicture {
-    flex-wrap: wrap;
-    grid-template-columns: .5fr;
-    grid-template-rows: .3fr;
-     width: fit-content;
-     margin: 7rem;
-     
-}*/ /*DELETE THIS STUFF LATER*/
+
 
 #AboutMeImageImage {
     grid-row: 1/2;
@@ -352,8 +206,6 @@ hr {
  margin-top: 9.8rem;
  margin-left: 5rem;
  place-items: center;
-
- 
 
 }
 
@@ -498,7 +350,7 @@ hr {
 }
 
 #ResumeFooter {
-     /*REMINDER TO ADD ALT TEXT HERE ON THE HTML PAGE*/
+    
      grid-row: 5/6;
      grid-column: 1/4;
     text-align: center;
@@ -510,9 +362,478 @@ hr {
 
 
 
-/*STUFF IN THIS SECTION IS THE PORTFOLIO LANDING PAGE */
+/*STUFF IN THIS SECTION IS FOR THE FLYERES AND ADS */
 
-/* nvm am getting rid of ts section but I worked hard on the code here so am keeping it
+#FlyersandAdsText {
+background-color: rgba(12, 5, 51, 0.699);
+  align-items: center;
+         text-align: center;
+    align-content: center;
+    place-items: center;
+      /*font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: 20px;*/
+
+font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.6rem;
+  letter-spacing: 8px;
+
+    margin-top: 3rem;
+    padding: 1rem;
+     color:white;
+}
+
+.FlyersandAdsExamples {
+
+ display: grid;
+  grid-template-columns: .5fr .5fr;
+  grid-template-rows: .3fr .3fr;
+
+  justify-items: center;
+  align-items: center;
+  place-items: center;
+    max-width: 70rem;
+    min-height: 100%;
+    margin: 0 auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    gap: 8px;
+}
+
+#GraphicExampleOne {
+grid-row: 1/2;
+grid-column: 1/2;
+   flex-wrap: wrap;
+ max-width: 100%;
+ height: auto;
+ align-content: center;
+ margin: 1rem;
+
+}
+
+#GraphicExampleTwo {
+grid-row: 1/2;
+grid-column: 2/3;
+   flex-wrap: wrap;
+ max-width: 100%;
+ height: auto;
+ align-content: center;
+ margin: 1rem;
+
+}
+
+#GraphicExampleThree {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  flex-wrap: wrap;
+ max-width: 100%;
+ height: auto;
+ align-content: center;
+ margin: 1rem;
+
+
+}
+
+#GraphicExampleFour {
+    grid-row: 2/3;
+    grid-column: 2/3;
+  flex-wrap: wrap;
+ max-width: 100%;
+ height: auto;
+ align-content: center;
+ margin: 1rem;
+  
+
+}
+
+
+
+
+
+/*STUFF IN THIS SECTION IS FOR BOOK DESIGN AND INTERIOR */
+    #BookCoversandInteriorsText {
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    place-items: center;
+  background-color: rgba(12, 5, 51, 0.699);
+      /*font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: 20px;*/
+
+
+font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.6rem;
+  letter-spacing: 8px;
+    margin-top: 3rem;
+    padding: 1rem;
+     color:white;
+    object-fit: cover;
+    }
+
+    #BookCoversandInteriorsExamples {
+        display: grid;
+        grid-template-columns: .5fr;
+        grid-template-rows: .3fr;
+       place-content: center;
+    gap: 8px;
+    }
+
+
+    #BookExampleOne {  
+        grid-row: 1/2;
+        grid-column: 1/2;
+        width: 100%;
+        flex-wrap: wrap;
+        height: auto;
+        align-content: center;
+        margin: 1rem;
+    }
+
+   
+
+
+    #BookExampleTwo {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 100%;
+    flex-wrap: wrap;
+    height: auto;
+    align-content: center;
+    margin: 1rem;
+    }
+
+
+    figcaption {
+        margin-top: .8rem;
+        text-align: center;
+    }
+
+
+
+/*STUFF IN HERE FOR THE RENDERS */
+
+.characterrendercontainer {   
+    display: grid;
+  grid-template-columns: .5fr .5fr .5fr;
+  grid-template-rows: .3fr .3fr;
+
+  justify-items: center;
+  align-items: center;
+  place-items: center;
+    max-width: 90rem;
+    min-height: 100%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    gap: 8px;
+}
+
+
+
+#characterdesignh2 {
+    align-items: center;
+         text-align: center;
+    align-content: center;
+    place-items: center;
+     /* font-family: "Alumni Sans Pinstripe", sans-serif;
+    font-weight: 400px;
+    font-style: normal;
+    font-size: 25px;
+    letter-spacing: 20px;*/
+
+ font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.6rem;
+  letter-spacing: 8px;
+  background-color: rgba(12, 5, 51, 0.699);
+
+    margin-top: 3rem;
+    padding: 1rem;
+  
+     color:white;
+}
+
+
+
+#render1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: rgba(37, 37, 37, 0.479);
+    border: .3px black solid;
+}
+
+#render2 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: rgba(37, 37, 37, 0.479);
+    border: .3px black solid;
+}
+
+#render3 {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+      background-color: rgba(37, 37, 37, 0.479);
+    border: .3px black solid;
+}
+
+#render4 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+      background-color: rgba(37, 37, 37, 0.479);
+    border: .3px black solid;
+}
+
+#render5 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+      background-color: rgba(37, 37, 37, 0.479);
+    border: .3px black solid;
+}
+
+#render6 {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+      background-color: rgba(37, 37, 37, 0.479);
+    border: .3px black solid;
+}
+
+
+
+
+
+/*STUFF IN THIS SECTION FOR THE FANART */
+
+#fanh2 {
+    align-items: center;
+         text-align: center;
+    align-content: center;
+    place-items: center;
+  
+
+ font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 1.6rem;
+  letter-spacing: 8px;
+  background-color: rgba(12, 5, 51, 0.699);
+     color:white;
+}
+
+
+ .FanartImages {
+  display: grid;
+  grid-template-columns: .5fr .5fr .5fr;
+  grid-template-rows: .3fr .3fr;
+  justify-items: center;
+  align-items: center;
+  place-items: center;
+    max-width: 90rem;
+    min-height: 100%;
+    margin: auto;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    gap: 8px;
+}
+
+
+#image1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: .3px black solid;
+}
+
+#image2 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: .3px black solid;
+}
+
+#image3 {
+    grid-row: 1/2;
+    grid-column: 3/4;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: .3px black solid;
+}
+
+#image4 {
+    grid-row: 2/3;
+    grid-column: 1/2;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: .3px black solid;
+}
+
+#image5 {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: .3px black solid;
+}
+
+#image6 {
+    grid-row: 2/3;
+    grid-column: 3/4;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: .3px black solid;
+}
+
+
+/*STUFF IN TS SECTION IS CONTACT PAGE */
+
+.Contacth2container {
+    display: grid;
+    grid-template-columns: .5fr .25fr;
+    grid-template-rows:   .5fr .25fr;
+    place-content: center;
+    gap: 4rem;
+
+   
+}
+
+
+#Contactimg {
+  grid-row: 1/2;
+  grid-column: 2/3;
+   border: black .3px solid;
+ flex-wrap: wrap;
+ max-width: 100%;
+ height: auto;
+ align-content: center;
+ margin: 1rem;
+ margin-top: 3rem;
+ place-content: center;
+ place-items: center;
+
+
+ 
+}
+
+
+
+#Contacth2 {
+ flex-wrap: wrap;
+    grid-row: 1/2;
+    grid-column: 1/2;
+    font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 2rem;
+  letter-spacing: 8px;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+      padding: .6rem;
+      border-bottom: .3px black solid;
+       max-width: 100%;
+    height: auto;
+    margin: 1rem;
+    margin-top: 4rem;
+ 
+}
+
+#Contactbodytext {
+
+grid-row: 1/2;
+    grid-column: 2/3;
+  
+     font-size: 1.2rem;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    
+   
+  
+}
+
+
+
+#emailimg {
+  
+    place-content: center;
+    margin-top: 6px;
+}
+
+
+
+/*DOWN HERE ARE UNIVERSAL CSS RULES*/
+
+
+footer {
+      background-color:rgba(32, 31, 31, 0.596);
+      color: rgb(206, 203, 203);
+      border: .3px black solid;
+      place-items: center;
+      text-align: center;
+      margin-top: 3rem;
+      padding: 1.5rem;
+    
+
+}
+
+ h3 {
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+
+a:link {
+    text-decoration:none;
+   
+}
+
+
+
+/* Below is code for my abandoned portfolio page. Wanted to keep it since I worked hard on the animation effects */
+
+
+/*
 
 
 .PortfolioLandingPageText {
@@ -646,700 +967,89 @@ hr {
     background-image: url(../css/characterportcolor.jpg);
 }
 
+/* below is my excess navbar button effects, just to keep an archive even though I simplied everything in the final version */
 
-
-
-
-
-
-a:link {
-    text-decoration:none;
-   
-}
+/*NAV HOVER BUTTON EFFECTS BELOW*/
 
 
 /*
-
-a:active {
-    color:rgb(221, 235, 250); 
-}
-
-
-/*
-@media (max-width: 800px) { /*whats in the ( ) is what the website looks for in a device and changes according to if it meets the requirements in the () or not */
-/*  .PortfolioLandingPageText {
-    display:block; /*this means when the screen size is less than 700px, then the grid is turned off and the website displays things on top of each other */
-   /* border: 0;
-    font-size: 1rem;
-    min-width: 100px;
- 
-  }
-}
-*/
-
-
-
-/*STUFF IN THIS SECTION IS FOR THE FLYERES AND ADS */
-
-#FlyersandAdsText {
-background-color: rgba(12, 5, 51, 0.699);
-  align-items: center;
-         text-align: center;
-    align-content: center;
-    place-items: center;
-      /*font-family: "Alumni Sans Pinstripe", sans-serif;
-    font-weight: 400px;
-    font-style: normal;
-    font-size: 25px;
-    letter-spacing: 20px;*/
-
-font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-  font-size: 1.6rem;
-  letter-spacing: 8px;
-
-    margin-top: 3rem;
-    padding: 1rem;
-     color:white;
-}
-
-.FlyersandAdsExamples {
-
- display: grid;
-  grid-template-columns: .5fr .5fr;
-  grid-template-rows: .3fr .3fr;
-
-  justify-items: center;
-  align-items: center;
-  place-items: center;
-    max-width: 70rem;
-    min-height: 100%;
-    margin: 0 auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    gap: 8px;
-}
-
-#GraphicExampleOne {
-grid-row: 1/2;
-grid-column: 1/2;
-    /*align-items: center;
-         text-align: center;
-    align-content: center;
-    place-items: center;
-    max-width: 100%;
-  height: auto;
-  object-fit: cover;*/
-   flex-wrap: wrap;
- max-width: 100%;
- height: auto;
- align-content: center;
- margin: 1rem;
-
-}
-
-#GraphicExampleTwo {
-grid-row: 1/2;
-grid-column: 2/3;
-   /*  align-items: center;
-         text-align: center;
-    align-content: center;
-    place-items: center;
-     width: 100%;
-  height: 100%;
-  object-fit: cover;*/
-   flex-wrap: wrap;
- max-width: 100%;
- height: auto;
- align-content: center;
- margin: 1rem;
-
-}
-
-#GraphicExampleThree {
-    grid-row: 2/3;
-    grid-column: 1/2;
-     /*align-items: center;
-         text-align: center;
-    align-content: center;
-    place-items: center;
-    width: 100%;
-  height: 100%;*/
-  flex-wrap: wrap;
- max-width: 100%;
- height: auto;
- align-content: center;
- margin: 1rem;
-
-
-}
-
-#GraphicExampleFour {
-    grid-row: 2/3;
-    grid-column: 2/3;
-     /*align-items: center;
-         text-align: center;
-    align-content: center;
-    place-items: center;
-    width: 100%;
-  height: 100%;*/
-  flex-wrap: wrap;
- max-width: 100%;
- height: auto;
- align-content: center;
- margin: 1rem;
-  
-
-}
-
-
-
-/*@media (max-width: 700px) { /*whats in the ( ) is what the website looks for in a device and changes according to if it meets the requirements in the () or not */
-  /*#FlyersandAdsExamples {
-    display:block; /*this means when the screen size is less than 700px, then the grid is turned off and the website displays things on top of each other */
-   /* border: 0;
- /*   font-size: 1rem;
-    min-width: 100px;
-  }
-}
-*/
-
-
-
-/*STUFF IN THIS SECTION IS FOR BOOK DESIGN AND INTERIOR */
-    #BookCoversandInteriorsText {
-    align-items: center;
-    text-align: center;
-    align-content: center;
-    place-items: center;
-  background-color: rgba(12, 5, 51, 0.699);
-      /*font-family: "Alumni Sans Pinstripe", sans-serif;
-    font-weight: 400px;
-    font-style: normal;
-    font-size: 25px;
-    letter-spacing: 20px;*/
-
-
-font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-  font-size: 1.6rem;
-  letter-spacing: 8px;
-    margin-top: 3rem;
-    padding: 1rem;
-     color:white;
-    object-fit: cover;
-    }
-
-    #BookCoversandInteriorsExamples {
-        display: grid;
-        grid-template-columns: .5fr;
-        grid-template-rows: .3fr;
-       place-content: center;
-    gap: 8px;
-    }
-
-
-    #BookExampleOne {  
-        grid-row: 1/2;
-        grid-column: 1/2;
-        width: 100%;
-        flex-wrap: wrap;
-        height: auto;
-        align-content: center;
-        margin: 1rem;
-    }
-
-   
-
-
-    #BookExampleTwo {
-    grid-row: 2/3;
-    grid-column: 1/2;
-    width: 100%;
-    flex-wrap: wrap;
-    height: auto;
-    align-content: center;
-    margin: 1rem;
-    }
-
-
-    figcaption {
-        margin-top: .8rem;
-        text-align: center;
-    }
-
-/*STUFF IN HERE FOR THE CONCEPT ART */
-
-/*#conceptarth2 {
-    align-items: center;
-         text-align: center;
-    align-content: center;
-    place-items: center;
-     background-color:rgba(246, 245, 245, 0.515);
-      font-family: "Alumni Sans Pinstripe", sans-serif;
-    font-weight: 400px;
-    font-style: normal;
-    font-size: 25px;
-    letter-spacing: 50px;
-    margin-top: 3rem;
-    padding: 15px;
-     background-color: rgba(7, 7, 7, 0.812);
-     color:white;
-}
-*/
-
-
-
-
-
-
-
-/*STUFF IN HERE FOR THE RENDERS */
-
-.characterrendercontainer {   /*these are long so maybe add like a horizontal scroll bar/arrow?? if i have time lol */
-    display: grid;
-  grid-template-columns: .5fr .5fr .5fr;
-  grid-template-rows: .3fr .3fr;
-
-  justify-items: center;
-  align-items: center;
-  place-items: center;
-    max-width: 90rem;
-    min-height: 100%;
-    margin: auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    gap: 8px;
-}
-
-
-
-#characterdesignh2 {
-    align-items: center;
-         text-align: center;
-    align-content: center;
-    place-items: center;
-     /* font-family: "Alumni Sans Pinstripe", sans-serif;
-    font-weight: 400px;
-    font-style: normal;
-    font-size: 25px;
-    letter-spacing: 20px;*/
-
- font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-  font-size: 1.6rem;
-  letter-spacing: 8px;
-  background-color: rgba(12, 5, 51, 0.699);
-
-    margin-top: 3rem;
-    padding: 1rem;
-  
-     color:white;
-}
-
-
-
-
-
-
-
-#render1 {
-    grid-row: 1/2;
-    grid-column: 1/2;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-color: rgba(37, 37, 37, 0.479);
-    border: .3px black solid;
-}
-
-#render2 {
-    grid-row: 1/2;
-    grid-column: 2/3;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    background-color: rgba(37, 37, 37, 0.479);
-    border: .3px black solid;
-}
-
-#render3 {
-    grid-row: 1/2;
-    grid-column: 3/4;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-      background-color: rgba(37, 37, 37, 0.479);
-    border: .3px black solid;
-}
-
-#render4 {
-    grid-row: 2/3;
-    grid-column: 1/2;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-      background-color: rgba(37, 37, 37, 0.479);
-    border: .3px black solid;
-}
-
-#render5 {
-    grid-row: 2/3;
-    grid-column: 2/3;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-      background-color: rgba(37, 37, 37, 0.479);
-    border: .3px black solid;
-}
-
-#render6 {
-    grid-row: 2/3;
-    grid-column: 3/4;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-      background-color: rgba(37, 37, 37, 0.479);
-    border: .3px black solid;
-}
-
-
-
-
-
-/*STUFF IN THIS SECTION FOR THE FANART */
-
-#fanh2 {
-    align-items: center;
-         text-align: center;
-    align-content: center;
-    place-items: center;
-  
-
- font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-  font-size: 1.6rem;
-  letter-spacing: 8px;
-  background-color: rgba(12, 5, 51, 0.699);
-     color:white;
-}
-
-
-
-
-
-
-
-
- .FanartImages {
-  display: grid;
-  grid-template-columns: .5fr .5fr .5fr;
-  grid-template-rows: .3fr .3fr;
-  justify-items: center;
-  align-items: center;
-  place-items: center;
-    max-width: 90rem;
-    min-height: 100%;
-    margin: auto;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    gap: 8px;
-}
-
-
-#image1 {
-    grid-row: 1/2;
-    grid-column: 1/2;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: .3px black solid;
-}
-
-#image2 {
-    grid-row: 1/2;
-    grid-column: 2/3;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: .3px black solid;
-}
-
-#image3 {
-    grid-row: 1/2;
-    grid-column: 3/4;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: .3px black solid;
-}
-
-#image4 {
-    grid-row: 2/3;
-    grid-column: 1/2;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: .3px black solid;
-}
-
-#image5 {
-    grid-row: 2/3;
-    grid-column: 2/3;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: .3px black solid;
-}
-
-#image6 {
-    grid-row: 2/3;
-    grid-column: 3/4;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border: .3px black solid;
-}
-
-
-   /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;*/
- 
-/*STUFF IN TS SECTION IS CONTACT PAGE */
-
-.Contacth2container {
-    display: grid;
-    grid-template-columns: .5fr .25fr;
-    grid-template-rows:   .5fr .25fr;
-    place-content: center;
-    gap: 4rem;
-
+.aboutbutton {
+     transition: transform 0.2s, border-radius 0.2s;
+  border: .3px black solid;
+     background-color: rgba(40, 23, 114, 0.699);
+    border-radius: 10%;
    
 }
 
 
-#Contactimg {
-  grid-row: 1/2;
-  grid-column: 2/3;
-   border: black .3px solid;
- flex-wrap: wrap;
- max-width: 100%;
- height: auto;
- align-content: center;
- margin: 1rem;
- margin-top: 3rem;
- place-content: center;
- place-items: center;
+.aboutbutton:hover {
+    transform: scale(1.1);
+    border-radius: 20%;
+     border: .3px black solid;
+    background: rgb(59, 50, 69);
+}
 
 
+
+.portfoliobutton {
+    transition: transform 0.2s, border-radius 0.2s;
+    background-color: rgba(40, 23, 114, 0.699);
+   border: .3px black solid;
+    border-radius: 10%;
+    
+}
+
+
+.portfoliobutton:hover {
+
+    transform: scale(1.1);
+    border-radius: 20%;
+    background: rgb(59, 50, 69);
+}
+
+.resumebutton {
+    transition: transform 0.2s, border-radius 0.2s;
+    background-color: rgba(40, 23, 114, 0.699);
+    border-radius: 10%;
+     border: .3px black solid;
+}
+
+.resumebutton:hover {
+    transform: scale(1.1);
+    border-radius: 20%;
+    background: rgb(59, 50, 69);
+}
+
+.contactbutton {
+    transition: transform 0.2s, border-radius 0.2s;
+   background-color: rgba(40, 23, 114, 0.699);
+    border-radius: 10%;
+     border: .3px black solid;
+}
+
+.contactbutton:hover {
+    transform: scale(1.1);
+    border-radius: 20%;
+    background: rgb(59, 50, 69);
+}
+
+
+.portfoliobutton {
+    position: relative;
+}
+
+.Portfoliodropdown {
+    display: none;
+  position: absolute;
+ background: rgb(59, 50, 69);
+  min-width: 1rem;
+ padding: .8rem;
  
-}
-
-
-
-#Contacth2 {
- flex-wrap: wrap;
-    grid-row: 1/2;
-    grid-column: 1/2;
-    font-family: "Manrope", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 200;
-  font-style: normal;
-  font-size: 2rem;
-  letter-spacing: 8px;
-    place-items: center;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-      padding: .6rem;
-      border-bottom: .3px black solid;
-       max-width: 100%;
-    height: auto;
-    margin: 1rem;
-    margin-top: 4rem;
-
-
-
-
-   /* grid-row: 1/2;
-    grid-column: 2/3;
-     font-family: "Alumni Sans Pinstripe", sans-serif;
-    font-weight: 400px;
-    font-style: normal;
-    font-size: 2rem;
-    letter-spacing: 20px;
-     /*text-align: center;
-    align-items: center;
-    align-content: center;
-     white-space: nowrap;
-      padding: .6rem;
-  
-      border-bottom: .3px black solid;
-      background-color: blanchedalmond;*/
- 
-}
-
-#Contactbodytext {
-
-grid-row: 1/2;
-    grid-column: 2/3;
-  
-     font-size: 1.2rem;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-    
-   
   
 }
 
-
-
-#emailimg {
-  
-    place-content: center;
-    margin-top: 6px;
-}
-
-
-
-/*DOWN HERE ARE UNIVERSAL CSS RULES*/
-
-
-footer {
-      background-color:rgba(32, 31, 31, 0.596);
-      color: rgb(206, 203, 203);
-      border: .3px black solid;
-      place-items: center;
-      text-align: center;
-      margin-top: 3rem;
-      padding: 1.5rem;
-    
-
-}
-
- h3 {
-    text-align: center;
-    font-size: 1.3rem;
-}
-
-
-
-
-
-/*
-
-.Contacth2container {
-    display: grid;
-    grid-template-columns: .3fr .5fr .3fr;
-    grid-template-rows: .2fr .2fr;
-    column-gap: 30px;
-}
-
-#Contacth2 {
-    grid-row: 1/2;
-    grid-column: 3/4;
-     font-family: "Alumni Sans Pinstripe", sans-serif;
-    font-weight: 400px;
-    font-style: normal;
-    font-size: 40px;
-    letter-spacing: 20px;
-     text-align: center;
-    align-items: center;
-    align-content: center;
-     white-space: nowrap;
-      padding: .6rem;
-      border-bottom: .3px black solid;
-      margin-right: 3rem;
-      height: fit-content;
-      margin-top: 3rem;
-      
-}
-
-#Contactbodytext {
-    grid-row: 2/3;
-    grid-column: 3/4;
-     padding: 1.2rem;
-     padding-top: 0;
-     font-size: 20px;
-    align-items: center;
-    align-content: center;
-    margin-right: 7rem;
-    margin-top: 3rem;
-  
-}
-
-
-#Contactimg {
-   
-  grid-area: 1 / 1 / 3 / 3;
-    align-self: center;
-    border: .3px solid black;
-  object-fit: contain;
-  margin: 3rem;
-    margin-top: 8rem;
-    width: 300px;
-    
-    
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*STUFF IN THIS SECTION IS THE BODY CONTENT OF THE ABOUT ME/LANDING PAGE 
-
-.LandingPageBody { 
-    display: grid;
-    grid-template-columns: 2fr 2fr 1fr 1fr 2fr 2fr;
-    grid-template-rows: 1fr;
-    background-color: rgb(216, 216, 235);
-    margin: 3rem;
-    padding: 4rem;
-    align-content: center;
-
-}
-
-
-#LandingPageBodyText {
-    display: grid;
-    font-size: 18px;
-    grid-row: 1/2;
-    grid-column: 2/5;
-    padding: 2rem;
-}
-
-
-#LandingPagePhoto {
-    display: flex;
-    flex-wrap: wrap;
-    grid-row: 1/2;
-    grid-column: 5/6;
-    max-width: 350px;
-    max-height: 400px;
-    padding: 2rem;
+.portfoliobutton:hover .Portfoliodropdown {
+    display: block;
     
 }
 */
